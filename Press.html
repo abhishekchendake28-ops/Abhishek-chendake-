@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Press & Features | Abhishek Sanjay Chendake</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f6f8;
+    color:#172033;
+    line-height:1.7;
+}
+
+header{
+    background:#111827;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    color:#f59e0b;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:#d1d5db;
+    text-decoration:none;
+    margin:5px 7px;
+    font-size:13px;
+}
+
+nav a:hover{
+    color:#f59e0b;
+}
+
+.hero{
+    background:linear-gradient(135deg,#111827,#374151);
+    color:white;
+    text-align:center;
+    padding:110px 20px;
+}
+
+.tag{
+    color:#fbbf24;
+    letter-spacing:5px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#d1d5db;
+    font-size:18px;
+}
+
+.intro{
+    max-width:850px;
+    margin:auto;
+    padding:85px 25px 50px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:36px;
+    margin-bottom:18px;
+}
+
+.intro p{
+    color:#6b7280;
+}
+
+.press{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 25px 100px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px 30px;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.icon{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.work{
+    background:white;
+    padding:90px 25px;
+    text-align:center;
+}
+
+.work h2{
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+.work-grid{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.work-box{
+    padding:30px;
+    border:1px solid #e5e7eb;
+    text-align:left;
+}
+
+.work-box span{
+    color:#d97706;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.work-box h3{
+    margin:10px 0;
+}
+
+.work-box p{
+    color:#6b7280;
+}
+
+.note{
+    background:#111827;
+    color:white;
+    padding:90px 25px;
+    text-align:center;
+}
+
+.note-inner{
+    max-width:800px;
+    margin:auto;
+}
+
+.note h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.note p{
+    color:#cbd5e1;
+    font-size:17px;
+}
+
+footer{
+    background:#080c14;
+    color:#6b7280;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#fbbf24;
+}
+
+@media(max-width:850px){
+
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .grid,
+    .work-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .intro h2,
+    .work h2,
+    .note h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Skills.html">Skills</a>
+<a href="Education.html">Education</a>
+<a href="Achievements.html">Achievements</a>
+<a href="Testimonials.html">Reflections</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Services.html">Services</a>
+<a href="Press.html">Press</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="tag">
+BOOKS • WRITING • IDEAS
+</div>
+
+<h1>
+Press & Features
+</h1>
+
+<p>
+A professional space for media features, interviews,
+author appearances and notable work.
+</p>
+
+</section>
+
+
+<section class="intro">
+
+<h2>
+About This Section
+</h2>
+
+<p>
+This page can be used to collect future media coverage,
+author interviews, book features, articles and other
+public appearances related to my work.
+</p>
+
+</section>
+
+
+<section class="press">
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">📰</div>
+
+<h3>
+Media Features
+</h3>
+
+<p>
+A space for future newspaper, magazine, website
+and media features related to my books and writing.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎙️</div>
+
+<h3>
+Interviews
+</h3>
+
+<p>
+Future interviews and conversations about writing,
+philosophy, books and creative work can be listed here.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📚</div>
+
+<h3>
+Book Features
+</h3>
+
+<p>
+Information about future book reviews, features,
+reading lists and literary discussions.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">✍️</div>
+
+<h3>
+Author Articles
+</h3>
+
+<p>
+Selected articles and published writing can be
+highlighted in this section.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎤</div>
+
+<h3>
+Speaking & Events
+</h3>
+
+<p>
+A place for future talks, discussions, literary
+events and creative sessions.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>
+Online Features
+</h3>
+
+<p>
+Future online publications, podcasts, blogs and
+digital features can be added here.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="work">
+
+<h2>
+Featured Work
+</h2>
+
+<div class="work-grid">
+
+
+<div class="work-box">
+
+<span>BOOK 01</span>
+
+<h3>
+The Ocean of Thoughts
+</h3>
+
+<p>
+A philosophical exploration of thoughts,
+questions and the inner world.
+</p>
+
+</div>
+
+
+<div class="work-box">
+
+<span>BOOK 02</span>
+
+<h3>
+अज्ञाताचा शोध
+</h3>
+
+<p>
+अस्तित्व, सत्य आणि अज्ञाताचा शोध घेणारा
+विचारांचा प्रवास.
+</p>
+
+</div>
+
+
+<div class="work-box">
+
+<span>BOOK 03</span>
+
+<h3>
+The Better Version of You
+</h3>
+
+<p>
+Ideas focused on self-discovery, reflection
+and personal growth.
+</p>
+
+</div>
+
+
+<div class="work-box">
+
+<span>AUTHOR</span>
+
+<h3>
+Abhishek Sanjay Chendake
+</h3>
+
+<p>
+Writer, Philosopher and Creator exploring
+ideas through books and digital projects.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="note">
+
+<div class="note-inner">
+
+<h2>
+For Media & Collaboration
+</h2>
+
+<p>
+For future interviews, features, literary discussions
+or collaboration opportunities, please get in touch
+through the contact page.
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+
+<br>
+
+Writer • Philosopher • Creator
+
+</footer>
+
+</body>
+</html>
