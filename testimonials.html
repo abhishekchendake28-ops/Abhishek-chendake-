@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reader Reflections | Abhishek Chendake</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, "Times New Roman", serif;
+    background:#f8f5ef;
+    color:#29251f;
+    line-height:1.8;
+}
+
+/* NAVIGATION */
+
+header{
+    background:#211b16;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    color:#d6b36a;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:#eee5d5;
+    text-decoration:none;
+    margin:6px 9px;
+    font-size:13px;
+}
+
+nav a:hover{
+    color:#d6b36a;
+}
+
+/* HERO */
+
+.hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:70px 20px;
+    background:
+    linear-gradient(rgba(33,27,22,.88),rgba(33,27,22,.88));
+    color:white;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.small-title{
+    color:#d6b36a;
+    letter-spacing:5px;
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:19px;
+    color:#ded5c8;
+    max-width:700px;
+    margin:auto;
+}
+
+/* INTRO */
+
+.intro{
+    max-width:900px;
+    margin:auto;
+    padding:90px 25px 50px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:38px;
+    margin-bottom:20px;
+    color:#30271f;
+}
+
+.intro p{
+    color:#6e655b;
+    font-size:17px;
+}
+
+/* REFLECTIONS */
+
+.reflections{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 25px 100px;
+}
+
+.reflection-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.reflection{
+    background:#fffdf9;
+    padding:40px;
+    border:1px solid #e4d8c7;
+    position:relative;
+    transition:.3s;
+}
+
+.reflection:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(70,50,30,.10);
+}
+
+.number{
+    color:#b38b45;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.reflection h3{
+    font-size:25px;
+    margin-bottom:15px;
+    color:#30271f;
+}
+
+.reflection p{
+    color:#70675d;
+    font-size:16px;
+}
+
+/* FEATURE */
+
+.feature{
+    background:#211b16;
+    color:white;
+    text-align:center;
+    padding:100px 25px;
+}
+
+.feature-inner{
+    max-width:800px;
+    margin:auto;
+}
+
+.feature-mark{
+    font-size:60px;
+    color:#d6b36a;
+    line-height:1;
+}
+
+.feature h2{
+    font-size:38px;
+    margin:25px 0;
+}
+
+.feature p{
+    color:#d8cec0;
+    font-size:18px;
+}
+
+/* CONNECT */
+
+.connect{
+    text-align:center;
+    padding:90px 25px;
+}
+
+.connect h2{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.connect p{
+    max-width:700px;
+    margin:auto;
+    color:#6e655b;
+}
+
+/* FOOTER */
+
+footer{
+    background:#16120f;
+    color:#aaa096;
+    text-align:center;
+    padding:35px 20px;
+    font-size:14px;
+}
+
+footer strong{
+    color:#d6b36a;
+}
+
+/* MOBILE */
+
+@media(max-width:750px){
+
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px 6px;
+        font-size:12px;
+    }
+
+    .hero{
+        min-height:430px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .intro h2{
+        font-size:30px;
+    }
+
+    .reflection-grid{
+        grid-template-columns:1fr;
+    }
+
+    .reflection{
+        padding:30px;
+    }
+
+    .feature h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Skills.html">Skills</a>
+<a href="Education.html">Education</a>
+<a href="Achievements.html">Achievements</a>
+<a href="Testimonials.html">Reflections</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="small-title">
+READ • REFLECT • QUESTION
+</div>
+
+<h1>
+Reader Reflections
+</h1>
+
+<p>
+Writing can begin with one thought, but a thought can
+continue its journey through the mind of every reader.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="intro">
+
+<h2>
+Beyond the Written Page
+</h2>
+
+<p>
+My books and writings explore questions about life,
+thoughts, existence, truth, self-discovery and personal
+growth. These ideas are meant to encourage reflection
+and independent thinking.
+</p>
+
+</section>
+
+
+<section class="reflections">
+
+<div class="reflection-grid">
+
+
+<div class="reflection">
+
+<div class="number">
+01 — THOUGHT
+</div>
+
+<h3>
+Questions That Remain
+</h3>
+
+<p>
+Some questions do not need an immediate answer.
+They can remain with us and encourage deeper
+thinking about ourselves and the world around us.
+</p>
+
+</div>
+
+
+<div class="reflection">
+
+<div class="number">
+02 — SELF
+</div>
+
+<h3>
+Understanding Yourself
+</h3>
+
+<p>
+Self-discovery begins when we become willing to
+observe our own thoughts, choices, experiences
+and beliefs.
+</p>
+
+</div>
+
+
+<div class="reflection">
+
+<div class="number">
+03 — TRUTH
+</div>
+
+<h3>
+Searching for Truth
+</h3>
+
+<p>
+The search for truth can begin with curiosity,
+questioning assumptions and looking beyond
+what appears obvious.
+</p>
+
+</div>
+
+
+<div class="reflection">
+
+<div class="number">
+04 — EXISTENCE
+</div>
+
+<h3>
+Questions of Existence
+</h3>
+
+<p>
+Thinking about existence can lead us toward
+deeper questions about life, consciousness,
+meaning and our place in the world.
+</p>
+
+</div>
+
+
+<div class="reflection">
+
+<div class="number">
+05 — PERSPECTIVE
+</div>
+
+<h3>
+A Different Perspective
+</h3>
+
+<p>
+Sometimes a change in perspective can completely
+change the way we understand an experience,
+an idea or even ourselves.
+</p>
+
+</div>
+
+
+<div class="reflection">
+
+<div class="number">
+06 — GROWTH
+</div>
+
+<h3>
+Becoming Better
+</h3>
+
+<p>
+Personal growth is a continuous process of
+learning, questioning, reflecting and becoming
+more aware of ourselves.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="feature">
+
+<div class="feature-inner">
+
+<div class="feature-mark">
+“
+</div>
+
+<h2>
+A Thought Can Become a Journey
+</h2>
+
+<p>
+A book does not always need to give every answer.
+Sometimes its greatest purpose is to make us stop,
+think, question and discover our own answers.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="connect">
+
+<h2>
+Keep Exploring
+</h2>
+
+<p>
+Explore my books, thoughts, philosophy and articles
+to discover more ideas and questions.
+</p>
+
+</section>
+
+
+<footer>
+
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+<br>
+Writer • Philosopher • Creator
+
+</footer>
+
+</body>
+</html>
