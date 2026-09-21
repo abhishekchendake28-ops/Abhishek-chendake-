@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Thoughts | Abhishek Sanjay Chendake</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, "Times New Roman", serif;
+    background:#f4f1eb;
+    color:#29251f;
+    line-height:1.8;
+}
+
+/* NAVBAR */
+nav{
+    background:#171717;
+    padding:20px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#e8c98d;
+    font-size:21px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:18px;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+nav a:hover{
+    color:#e8c98d;
+}
+
+/* HERO */
+.hero{
+    min-height:55vh;
+    background:
+    linear-gradient(rgba(20,18,15,.88),rgba(20,18,15,.88)),
+    radial-gradient(circle at center,#5a4934,#171717);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.small{
+    color:#e8c98d;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:58px;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#d8d3ca;
+    font-size:19px;
+}
+
+/* INTRO */
+.intro{
+    max-width:850px;
+    margin:auto;
+    padding:70px 25px 40px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:35px;
+    font-weight:normal;
+    margin-bottom:18px;
+}
+
+.intro p{
+    color:#665f56;
+    font-size:17px;
+}
+
+/* THOUGHTS */
+.thoughts{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 25px 80px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fffdf9;
+    border:1px solid #e3ddd3;
+    padding:35px 30px;
+    min-height:220px;
+    position:relative;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+.number{
+    font-family:Arial,sans-serif;
+    color:#b28a4c;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:22px;
+}
+
+.quote{
+    font-size:20px;
+    color:#302b25;
+}
+
+.line{
+    width:45px;
+    height:2px;
+    background:#b28a4c;
+    margin-top:25px;
+}
+
+/* FEATURE */
+.feature{
+    background:#211f1b;
+    color:white;
+    text-align:center;
+    padding:85px 25px;
+}
+
+.feature h2{
+    font-size:35px;
+    font-weight:normal;
+    color:#e8c98d;
+    margin-bottom:20px;
+}
+
+.feature p{
+    max-width:760px;
+    margin:auto;
+    color:#d5d0c8;
+    font-size:18px;
+    font-style:italic;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:35px 20px;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+footer strong{
+    color:#e8c98d;
+}
+
+/* MOBILE */
+@media(max-width:750px){
+
+    nav{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px 7px;
+    }
+
+    .hero{
+        min-height:48vh;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .intro h2{
+        font-size:29px;
+    }
+
+    .card{
+        padding:28px 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">Abhishek Chendake</div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Books.html">Books</a>
+        <a href="Thoughts.html">Thoughts</a>
+        <a href="Philosophy.html">Philosophy</a>
+        <a href="Journey.html">Journey</a>
+        <a href="Articles.html">Articles</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="small">THOUGHTS • REFLECTIONS • IDEAS</div>
+
+        <h1>My Thoughts</h1>
+
+        <p>
+            A collection of reflections on life, existence,
+            truth, self-discovery and the human mind.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="intro">
+
+    <h2>Thoughts That Make Us Pause</h2>
+
+    <p>
+        Some thoughts do not give us immediate answers.
+        Instead, they encourage us to stop, question,
+        observe and look deeper within ourselves.
+    </p>
+
+</section>
+
+
+<!-- THOUGHT CARDS -->
+<section class="thoughts">
+
+<div class="grid">
+
+    <div class="card">
+        <div class="number">01 — REFLECTION</div>
+        <div class="quote">
+            “Sometimes the questions we ask are more important
+            than the answers we find.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">02 — SELF</div>
+        <div class="quote">
+            “Understanding yourself is the beginning of
+            understanding the world.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">03 — TRUTH</div>
+        <div class="quote">
+            “Truth may challenge us, but questioning helps us
+            see beyond assumptions.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">04 — GROWTH</div>
+        <div class="quote">
+            “A better version of ourselves begins with the
+            courage to look within.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">05 — LIFE</div>
+        <div class="quote">
+            “Life becomes meaningful when we begin to
+            understand why we live it.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">06 — EXISTENCE</div>
+        <div class="quote">
+            “To question our existence is not to reject life,
+            but to understand it more deeply.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">07 — SILENCE</div>
+        <div class="quote">
+            “Sometimes silence reveals what words are unable
+            to explain.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">08 — KNOWLEDGE</div>
+        <div class="quote">
+            “Knowledge begins with curiosity and grows through
+            questioning.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">09 — CHANGE</div>
+        <div class="quote">
+            “Change begins when we become willing to see
+            ourselves differently.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">10 — INNER WORLD</div>
+        <div class="quote">
+            “The world outside may be vast, but the world
+            within us is equally unexplored.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">11 — COURAGE</div>
+        <div class="quote">
+            “The courage to question yourself can become
+            the beginning of wisdom.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="number">12 — PERSPECTIVE</div>
+        <div class="quote">
+            “A different perspective can transform the meaning
+            of the same experience.”
+        </div>
+        <div class="line"></div>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURE -->
+<section class="feature">
+
+    <h2>Keep Questioning</h2>
+
+    <p>
+        “A thoughtful life is not necessarily a life with
+        all the answers. It is a life that continues to
+        ask meaningful questions.”
+    </p>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 <strong>Abhishek Sanjay Chendake</strong><br>
+    Writer • Philosopher • Creator
+
+</footer>
+
+</body>
+</html>
