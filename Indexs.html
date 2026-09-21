@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abhishek Sanjay Chendake | Writer & Philosopher</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f7fa;
+    color:#172033;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+header{
+    background:#0b1120;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.logo{
+    color:#60a5fa;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:#dbe4ef;
+    text-decoration:none;
+    margin:5px 7px;
+    font-size:13px;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:90px 20px;
+    background:
+    linear-gradient(135deg,#0b1120,#1d4ed8);
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.tag{
+    color:#93c5fd;
+    letter-spacing:5px;
+    font-size:13px;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero h2{
+    font-size:24px;
+    font-weight:normal;
+    color:#dbeafe;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.button{
+    display:inline-block;
+    padding:13px 28px;
+    margin:6px;
+    border-radius:30px;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+}
+
+.button-outline{
+    background:transparent;
+    border:1px solid #93c5fd;
+}
+
+.button-outline:hover{
+    background:#2563eb;
+}
+
+/* INTRO */
+
+.intro{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:90px 25px 60px;
+}
+
+.intro h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.intro p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* BOOKS */
+
+.books{
+    max-width:1150px;
+    margin:auto;
+    padding:40px 25px 100px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.title p{
+    color:#64748b;
+}
+
+.book-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.book{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    border:1px solid #e2e8f0;
+    transition:.3s;
+}
+
+.book:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.book-number{
+    color:#2563eb;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.book h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.book p{
+    color:#64748b;
+    font-size:15px;
+}
+
+/* PHILOSOPHY */
+
+.philosophy{
+    background:#111827;
+    color:white;
+    padding:100px 25px;
+    text-align:center;
+}
+
+.philosophy-inner{
+    max-width:900px;
+    margin:auto;
+}
+
+.philosophy h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.philosophy p{
+    color:#cbd5e1;
+    font-size:17px;
+}
+
+.philosophy-list{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.philosophy-item{
+    border:1px solid #334155;
+    padding:13px 22px;
+    border-radius:30px;
+    color:#bfdbfe;
+}
+
+/* WORK */
+
+.work{
+    padding:100px 25px;
+    background:#eef4ff;
+}
+
+.work-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.work-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+}
+
+.work-card h3{
+    color:#2563eb;
+    margin-bottom:12px;
+}
+
+.work-card p{
+    color:#64748b;
+}
+
+/* QUOTE */
+
+.quote{
+    text-align:center;
+    padding:100px 25px;
+    background:white;
+}
+
+.quote-box{
+    max-width:800px;
+    margin:auto;
+}
+
+.quote-mark{
+    font-size:70px;
+    color:#2563eb;
+    line-height:1;
+}
+
+.quote h2{
+    font-size:32px;
+    margin:20px 0;
+}
+
+.quote p{
+    color:#64748b;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:90px 25px;
+}
+
+.contact h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.contact p{
+    color:#cbd5e1;
+}
+
+.contact a{
+    color:#93c5fd;
+    text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+    background:#060b15;
+    color:#64748b;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#60a5fa;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .book-grid,
+    .work-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .hero{
+        min-height:550px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:20px;
+    }
+
+    .book-grid,
+    .work-grid{
+        grid-template-columns:1fr;
+    }
+
+    .intro h2,
+    .title h2,
+    .philosophy h2,
+    .contact h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Skills.html">Skills</a>
+<a href="Education.html">Education</a>
+<a href="Achievements.html">Achievements</a>
+<a href="Testimonials.html">Reflections</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Services.html">Services</a>
+<a href="Press.html">Press</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="tag">
+OFFICIAL AUTHOR WEBSITE
+</div>
+
+<h1>
+Abhishek Sanjay Chendake
+</h1>
+
+<h2>
+Writer • Philosopher • Creator
+</h2>
+
+<p>
+Exploring thoughts, philosophy, existence, truth,
+self-discovery and the endless journey of learning
+through books, writing and digital creation.
+</p>
+
+<div class="buttons">
+
+<a href="About.html" class="button">
+About Me
+</a>
+
+<a href="Books.html" class="button button-outline">
+Explore My Books
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<h2>
+Welcome to My World of Ideas
+</h2>
+
+<p>
+I am Abhishek Sanjay Chendake, a writer and creator
+interested in philosophy, human thoughts, existence,
+self-discovery and personal growth. Through my books,
+articles and digital projects, I continue to explore
+ideas that encourage curiosity and deeper thinking.
+</p>
+
+</section>
+
+
+<!-- BOOKS -->
+
+<section class="books">
+
+<div class="title">
+
+<h2>
+My Books
+</h2>
+
+<p>
+Three books exploring different dimensions of thought,
+existence and personal growth.
+</p>
+
+</div>
+
+
+<div class="book-grid">
+
+
+<div class="book">
+
+<div class="book-number">
+BOOK 01
+</div>
+
+<h3>
+The Ocean of Thoughts
+</h3>
+
+<p>
+An exploration of thoughts, questions and the
+vast inner world of the human mind.
+</p>
+
+</div>
+
+
+<div class="book">
+
+<div class="book-number">
+BOOK 02
+</div>
+
+<h3>
+अज्ञाताचा शोध
+</h3>
+
+<p>
+अस्तित्व, सत्य आणि अज्ञाताचा शोध घेणारा
+विचारांचा प्रवास.
+</p>
+
+</div>
+
+
+<div class="book">
+
+<div class="book-number">
+BOOK 03
+</div>
+
+<h3>
+The Better Version of You
+</h3>
+
+<p>
+A journey of reflection, self-discovery and
+personal growth.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- PHILOSOPHY -->
+
+<section class="philosophy">
+
+<div class="philosophy-inner">
+
+<h2>
+The Questions I Explore
+</h2>
+
+<p>
+Philosophy begins with curiosity. My writing explores
+questions rather than simply accepting assumptions.
+</p>
+
+<div class="philosophy-list">
+
+<div class="philosophy-item">
+Existence
+</div>
+
+<div class="philosophy-item">
+Truth
+</div>
+
+<div class="philosophy-item">
+Consciousness
+</div>
+
+<div class="philosophy-item">
+Self-Discovery
+</div>
+
+<div class="philosophy-item">
+Human Nature
+</div>
+
+<div class="philosophy-item">
+Meaning
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WORK -->
+
+<section class="work">
+
+<div class="title">
+
+<h2>
+Explore My Work
+</h2>
+
+<p>
+Discover different parts of my creative and learning journey.
+</p>
+
+</div>
+
+
+<div class="work-grid">
+
+
+<div class="work-card">
+
+<h3>
+My Thoughts
+</h3>
+
+<p>
+Short reflections and ideas about life,
+thinking and human experience.
+</p>
+
+<br>
+
+<a href="Thoughts.html">
+Explore Thoughts →
+</a>
+
+</div>
+
+
+<div class="work-card">
+
+<h3>
+Articles & Essays
+</h3>
+
+<p>
+Long-form writing exploring philosophy,
+truth, meaning and self-discovery.
+</p>
+
+<br>
+
+<a href="Articles.html">
+Read Articles →
+</a>
+
+</div>
+
+
+<div class="work-card">
+
+<h3>
+My Journey
+</h3>
+
+<p>
+A journey shaped by curiosity, learning,
+writing and continuous creation.
+</p>
+
+<br>
+
+<a href="Journey.html">
+Explore Journey →
+</a>
+
+</div>
+
+
+<div class="work-card">
+
+<h3>
+My Projects
+</h3>
+
+<p>
+Digital projects, websites, creative ideas
+and experiments with technology.
+</p>
+
+<br>
+
+<a href="Projects.html">
+View Projects →
+</a>
+
+</div>
+
+
+<div class="work-card">
+
+<h3>
+My Skills
+</h3>
+
+<p>
+Writing, philosophy, web development,
+AI tools and digital creation.
+</p>
+
+<br>
+
+<a href="Skills.html">
+View Skills →
+</a>
+
+</div>
+
+
+<div class="work-card">
+
+<h3>
+Education & Learning
+</h3>
+
+<p>
+Formal education combined with independent
+learning and practical experience.
+</p>
+
+<br>
+
+<a href="Education.html">
+View Education →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section class="quote">
+
+<div class="quote-box">
+
+<div class="quote-mark">
+“
+</div>
+
+<h2>
+Keep Questioning. Keep Learning. Keep Creating.
+</h2>
+
+<p>
+The journey of understanding does not end with
+an answer. Every answer can lead to another question.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>
+Let's Connect
+</h2>
+
+<p>
+For books, writing, philosophy, projects and collaborations.
+</p>
+
+<br>
+
+<a href="mailto:abhishekchendake23@gmail.com">
+abhishekchendake23@gmail.com
+</a>
+
+<br>
+
+<a href="Contact.html" class="button">
+Contact Me
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+
+<br>
+
+Writer • Philosopher • Creator
+
+<br><br>
+
+Mulegaon, Solapur, Maharashtra, India
+
+</footer>
+
+</body>
+</html>
