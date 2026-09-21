@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Books | Abhishek Sanjay Chendake</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia, "Times New Roman", serif;
+    background:#f6f3ed;
+    color:#211f1b;
+    line-height:1.8;
+}
+
+/* NAVBAR */
+nav{
+    background:#11100e;
+    padding:20px 6%;
+    text-align:center;
+}
+
+.logo{
+    color:#d9ad55;
+    font-family:Arial,sans-serif;
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+nav a{
+    color:#f5f1e8;
+    text-decoration:none;
+    margin:7px 12px;
+    font-family:Arial,sans-serif;
+    font-size:15px;
+    display:inline-block;
+}
+
+nav a:hover{
+    color:#d9ad55;
+}
+
+/* HERO */
+.hero{
+    background:
+    radial-gradient(circle at top right,#46351e,#171512 55%,#0e0d0b);
+    color:white;
+    text-align:center;
+    padding:100px 25px 90px;
+}
+
+.small-title{
+    color:#d9ad55;
+    letter-spacing:7px;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#ddd6c9;
+    font-size:19px;
+}
+
+/* BOOK SECTION */
+.books{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 6%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#777;
+    max-width:700px;
+    margin:0 auto 55px;
+}
+
+/* BOOK CARD */
+.book{
+    background:white;
+    border-radius:18px;
+    margin-bottom:45px;
+    padding:45px;
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:35px;
+    align-items:center;
+    box-shadow:0 12px 35px rgba(0,0,0,0.09);
+    border-left:6px solid #d9ad55;
+}
+
+.book-number{
+    width:130px;
+    height:180px;
+    background:linear-gradient(145deg,#171512,#49351d);
+    color:#d9ad55;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:15px;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 12px 25px rgba(0,0,0,.2);
+}
+
+.book h2{
+    font-size:31px;
+    margin-bottom:10px;
+}
+
+.book h3{
+    color:#a77c32;
+    font-size:17px;
+    margin-bottom:15px;
+    font-family:Arial,sans-serif;
+}
+
+.book p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.button{
+    display:inline-block;
+    background:#171512;
+    color:white;
+    text-decoration:none;
+    padding:11px 22px;
+    border-radius:30px;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#d9ad55;
+    color:#111;
+}
+
+/* AUTHOR NOTE */
+.note{
+    background:#171512;
+    color:white;
+    padding:65px 30px;
+    text-align:center;
+}
+
+.note h2{
+    color:#d9ad55;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.note p{
+    max-width:750px;
+    margin:auto;
+    color:#ddd;
+}
+
+/* FOOTER */
+footer{
+    background:#0d0c0a;
+    color:#aaa;
+    text-align:center;
+    padding:35px 20px;
+    font-family:Arial,sans-serif;
+}
+
+footer strong{
+    color:#d9ad55;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .hero{
+        padding:75px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .small-title{
+        font-size:12px;
+        letter-spacing:5px;
+    }
+
+    .books{
+        padding:60px 5%;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .book{
+        grid-template-columns:1fr;
+        padding:30px 25px;
+        text-align:center;
+    }
+
+    .book-number{
+        margin:auto;
+        width:120px;
+        height:165px;
+    }
+
+    .book h2{
+        font-size:27px;
+    }
+
+    nav a{
+        margin:5px 7px;
+        font-size:13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="small-title">
+THE WRITTEN WORKS
+</div>
+
+<h1>My Books</h1>
+
+<p>
+Books born from curiosity, questions, reflection and the continuous search for a deeper understanding of life.
+</p>
+
+</section>
+
+
+<!-- BOOKS -->
+
+<section class="books">
+
+<h2 class="section-title">
+Three Books. Three Journeys.
+</h2>
+
+<p class="section-subtitle">
+Each book explores a different dimension of thoughts, existence, self-discovery and personal growth.
+</p>
+
+
+<!-- BOOK 1 -->
+
+<div class="book">
+
+<div class="book-number">
+BOOK<br>01
+</div>
+
+<div>
+
+<h2>The Ocean of Thoughts</h2>
+
+<h3>PHILOSOPHY • THOUGHTS • HUMAN EXPERIENCE</h3>
+
+<p>
+The Ocean of Thoughts explores the vast world of human thinking, questions, emotions and ideas. It reflects on the thoughts that quietly shape our understanding of ourselves and the world around us.
+</p>
+
+<p>
+The book invites readers to pause, question familiar assumptions and explore the deeper layers of their own thinking.
+</p>
+
+<a class="button"
+href="https://www.amazon.com/dp/B0HK2W5YZ8"
+target="_blank">
+View on Amazon
+</a>
+
+</div>
+
+</div>
+
+
+<!-- BOOK 2 -->
+
+<div class="book">
+
+<div class="book-number">
+BOOK<br>02
+</div>
+
+<div>
+
+<h2>अज्ञाताचा शोध</h2>
+
+<h3>अस्तित्व आणि सत्याचा प्रवास</h3>
+
+<p>
+अज्ञाताचा शोध हा अस्तित्व, सत्य, विचार आणि स्वतःच्या शोधाचा एक तात्त्विक प्रवास आहे.
+</p>
+
+<p>
+या पुस्तकातून ज्ञाताच्या पलीकडे असलेल्या प्रश्नांकडे पाहण्याचा प्रयत्न केला आहे. आपण कोण आहोत, सत्य म्हणजे काय आणि आपल्या अस्तित्वाचा अर्थ काय—अशा प्रश्नांभोवती हा विचारप्रवास फिरतो.
+</p>
+
+<a class="button"
+href="https://amzn.in/d/0gwNUv69"
+target="_blank">
+View on Amazon
+</a>
+
+</div>
+
+</div>
+
+
+<!-- BOOK 3 -->
+
+<div class="book">
+
+<div class="book-number">
+BOOK<br>03
+</div>
+
+<div>
+
+<h2>The Better Version of You</h2>
+
+<h3>SELF-DISCOVERY • GROWTH • CHANGE</h3>
+
+<p>
+The Better Version of You explores the journey of understanding yourself, learning from experiences and continuously moving toward personal growth.
+</p>
+
+<p>
+Becoming a better version of yourself is not about becoming someone else. It is about understanding who you are, recognising your possibilities and consciously choosing how you want to grow.
+</p>
+
+<a class="button"
+href="https://a.co/d/05Ynxzvd"
+target="_blank">
+View on Amazon
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AUTHOR NOTE -->
+
+<section class="note">
+
+<h2>Why I Write</h2>
+
+<p>
+I write because thoughts often lead to questions, and questions lead us toward deeper understanding. My books are an attempt to explore those questions and create a space where readers can pause, reflect and discover their own perspectives.
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+</p>
+
+<p>
+Writer • Philosopher • Creator
+</p>
+
+</footer>
+
+</body>
+</html>
