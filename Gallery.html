@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Abhishek Sanjay Chendake</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#111827;
+    color:#f8fafc;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+header{
+    background:#0b1120;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    border-bottom:1px solid #263247;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:#cbd5e1;
+    text-decoration:none;
+    margin:5px 8px;
+    font-size:13px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    padding:110px 20px;
+    text-align:center;
+    background:radial-gradient(circle at top,#1e3a5f,#111827 60%);
+}
+
+.tag{
+    color:#38bdf8;
+    letter-spacing:5px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:720px;
+    margin:auto;
+    color:#94a3b8;
+    font-size:18px;
+}
+
+/* PROFILE PHOTO */
+
+.profile-section{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 25px 30px;
+    text-align:center;
+}
+
+.profile-photo{
+    width:210px;
+    height:210px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.profile-section h2{
+    margin-top:25px;
+    font-size:30px;
+}
+
+.profile-section p{
+    color:#94a3b8;
+    margin-top:5px;
+}
+
+/* GALLERY */
+
+.gallery{
+    max-width:1150px;
+    margin:auto;
+    padding:70px 25px 100px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:#94a3b8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.item{
+    min-height:270px;
+    background:#182235;
+    border:1px solid #29374d;
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    position:relative;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.item:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.number{
+    position:absolute;
+    top:22px;
+    right:25px;
+    color:#475569;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:auto;
+}
+
+.item h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.item p{
+    color:#94a3b8;
+    font-size:15px;
+}
+
+/* FEATURE */
+
+.feature{
+    background:#0b1120;
+    padding:100px 25px;
+    text-align:center;
+}
+
+.feature-box{
+    max-width:850px;
+    margin:auto;
+}
+
+.feature h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.feature p{
+    color:#94a3b8;
+    font-size:18px;
+}
+
+/* CATEGORIES */
+
+.categories{
+    max-width:950px;
+    margin:auto;
+    padding:90px 25px;
+    text-align:center;
+}
+
+.categories h2{
+    font-size:35px;
+    margin-bottom:35px;
+}
+
+.category-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+.category{
+    padding:13px 22px;
+    border:1px solid #334155;
+    color:#cbd5e1;
+    border-radius:30px;
+}
+
+.category:hover{
+    border-color:#38bdf8;
+    color:#38bdf8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#060b15;
+    text-align:center;
+    padding:35px 20px;
+    color:#64748b;
+}
+
+footer strong{
+    color:#38bdf8;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .profile-photo{
+        width:170px;
+        height:170px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Skills.html">Skills</a>
+<a href="Education.html">Education</a>
+<a href="Achievements.html">Achievements</a>
+<a href="Testimonials.html">Reflections</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="tag">
+IDEAS • BOOKS • CREATION
+</div>
+
+<h1>
+My Gallery
+</h1>
+
+<p>
+A visual collection of my books, ideas,
+writing, philosophy and creative work.
+</p>
+
+</section>
+
+
+<!-- PROFILE PHOTO -->
+
+<section class="profile-section">
+
+<img
+src="Profile.jpg"
+alt="Abhishek Sanjay Chendake"
+class="profile-photo"
+>
+
+<h2>
+Abhishek Sanjay Chendake
+</h2>
+
+<p>
+Writer • Philosopher • Creator
+</p>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<div class="section-title">
+
+<h2>
+Creative Collection
+</h2>
+
+<p>
+Different parts of my journey as a writer,
+philosopher and creator.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="item">
+
+<div class="number">01</div>
+
+<div class="icon">📖</div>
+
+<h3>
+The Ocean of Thoughts
+</h3>
+
+<p>
+A journey through thoughts, questions and
+the unexplored world within the mind.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="number">02</div>
+
+<div class="icon">🔍</div>
+
+<h3>
+अज्ञाताचा शोध
+</h3>
+
+<p>
+अस्तित्व, सत्य आणि अज्ञाताचा शोध घेणारा
+विचारांचा प्रवास.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="number">03</div>
+
+<div class="icon">✨</div>
+
+<h3>
+The Better Version of You
+</h3>
+
+<p>
+Ideas about personal growth, reflection
+and becoming a better version of yourself.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="number">04</div>
+
+<div class="icon">💭</div>
+
+<h3>
+Thoughts
+</h3>
+
+<p>
+Short reflections and ideas inspired by
+life, experience and observation.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="number">05</div>
+
+<div class="icon">🧠</div>
+
+<h3>
+Philosophy
+</h3>
+
+<p>
+Exploring existence, truth, consciousness,
+meaning and human nature.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="number">06</div>
+
+<div class="icon">✍️</div>
+
+<h3>
+Writing
+</h3>
+
+<p>
+Articles, essays and creative ideas developed
+through continuous writing.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="feature">
+
+<div class="feature-box">
+
+<h2>
+Create. Question. Explore.
+</h2>
+
+<p>
+Every book, article and project is part of
+a larger journey of learning and creation.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="categories">
+
+<h2>
+Explore My Work
+</h2>
+
+<div class="category-list">
+
+<div class="category">Books</div>
+<div class="category">Philosophy</div>
+<div class="category">Thoughts</div>
+<div class="category">Articles</div>
+<div class="category">Writing</div>
+<div class="category">Projects</div>
+<div class="category">Learning</div>
+<div class="category">Ideas</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+
+<br>
+
+Writer • Philosopher • Creator
+
+</footer>
+
+</body>
+</html>
