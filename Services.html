@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Abhishek Sanjay Chendake</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7f9;
+    color:#17212b;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+header{
+    background:#ffffff;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    border-bottom:1px solid #dce3e8;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#0f766e;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:#334155;
+    text-decoration:none;
+    margin:5px 8px;
+    font-size:13px;
+}
+
+nav a:hover{
+    color:#0f766e;
+}
+
+/* HERO */
+
+.hero{
+    padding:110px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#115e59);
+    color:white;
+}
+
+.tag{
+    color:#99f6e4;
+    letter-spacing:5px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#d1fae5;
+    font-size:18px;
+}
+
+/* INTRO */
+
+.intro{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    padding:85px 25px 50px;
+}
+
+.intro h2{
+    font-size:36px;
+    margin-bottom:18px;
+}
+
+.intro p{
+    color:#64748b;
+}
+
+/* SERVICES */
+
+.services{
+    max-width:1150px;
+    margin:auto;
+    padding:40px 25px 100px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service{
+    background:white;
+    padding:40px 30px;
+    border-radius:16px;
+    border:1px solid #dce3e8;
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-7px);
+    border-color:#0f766e;
+    box-shadow:0 15px 35px rgba(15,118,110,.10);
+}
+
+.icon{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.service h3{
+    font-size:23px;
+    margin-bottom:12px;
+    color:#0f766e;
+}
+
+.service p{
+    color:#64748b;
+    font-size:15px;
+}
+
+/* PROCESS */
+
+.process{
+    background:#ffffff;
+    padding:100px 25px;
+    text-align:center;
+}
+
+.process h2{
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.steps{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.step{
+    padding:25px;
+}
+
+.step-number{
+    width:55px;
+    height:55px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#0f766e;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.step h3{
+    margin-bottom:10px;
+}
+
+.step p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:100px 25px;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    color:#94a3b8;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 28px;
+    background:#14b8a6;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+.button:hover{
+    background:#0d9488;
+}
+
+/* FOOTER */
+
+footer{
+    background:#080d14;
+    color:#64748b;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#5eead4;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .steps{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .grid,
+    .steps{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .intro h2,
+    .process h2,
+    .cta h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Skills.html">Skills</a>
+<a href="Education.html">Education</a>
+<a href="Achievements.html">Achievements</a>
+<a href="Testimonials.html">Reflections</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Services.html">Services</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="tag">
+CREATE • WRITE • EXPLORE
+</div>
+
+<h1>
+My Services
+</h1>
+
+<p>
+Creative and digital work built around writing,
+ideas, philosophy, technology and continuous learning.
+</p>
+
+</section>
+
+
+<section class="intro">
+
+<h2>
+What I Work On
+</h2>
+
+<p>
+My work combines creative thinking, writing,
+digital creation and technology. These areas
+represent the skills and interests I continue
+to develop through practical projects.
+</p>
+
+</section>
+
+
+<section class="services">
+
+<div class="grid">
+
+
+<div class="service">
+
+<div class="icon">✍️</div>
+
+<h3>
+Writing
+</h3>
+
+<p>
+Creative writing, philosophical writing,
+articles, essays and thought-based content.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">📚</div>
+
+<h3>
+Book Projects
+</h3>
+
+<p>
+Developing book ideas, manuscripts, concepts
+and digital publishing projects.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🧠</div>
+
+<h3>
+Philosophy
+</h3>
+
+<p>
+Exploring ideas related to existence, truth,
+self-discovery, consciousness and meaning.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">💻</div>
+
+<h3>
+Web Creation
+</h3>
+
+<p>
+Creating personal websites and digital pages
+using HTML, CSS and web technologies.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🤖</div>
+
+<h3>
+AI Exploration
+</h3>
+
+<p>
+Using AI tools for learning, creative work,
+research, ideas and digital experimentation.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🚀</div>
+
+<h3>
+Digital Projects
+</h3>
+
+<p>
+Building practical digital projects while
+learning new technologies and tools.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="process">
+
+<h2>
+How I Approach My Work
+</h2>
+
+<div class="steps">
+
+
+<div class="step">
+
+<div class="step-number">
+01
+</div>
+
+<h3>
+Explore
+</h3>
+
+<p>
+Start with curiosity and explore the idea.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+02
+</div>
+
+<h3>
+Learn
+</h3>
+
+<p>
+Research, learn and understand the subject.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+03
+</div>
+
+<h3>
+Create
+</h3>
+
+<p>
+Turn ideas into writing or practical projects.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+04
+</div>
+
+<h3>
+Improve
+</h3>
+
+<p>
+Keep experimenting, learning and improving.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>
+Have an Idea?
+</h2>
+
+<p>
+Ideas become meaningful when we begin to explore
+and create them.
+</p>
+
+<a href="Contact.html" class="button">
+Contact Me
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+
+<br>
+
+Writer • Philosopher • Creator
+
+</footer>
+
+</body>
+</html>
