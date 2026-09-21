@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me | Abhishek Sanjay Chendake</title>
+
+<meta name="description" content="About Abhishek Sanjay Chendake - Writer, Philosopher and Creator.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia,"Times New Roman",serif;
+    background:#f4f1ea;
+    color:#29251f;
+    line-height:1.8;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#17140f;
+    padding:18px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.logo{
+    color:#e9c46a;
+    font-family:Arial,sans-serif;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links a{
+    color:#ffffff;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    margin-left:16px;
+    padding:5px 0;
+}
+
+.nav-links a:hover{
+    color:#e9c46a;
+}
+
+
+/* PAGE HEADER */
+
+.page-header{
+    background:linear-gradient(135deg,#17140f,#3b2f20);
+    color:#ffffff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.label{
+    color:#e9c46a;
+    font-family:Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:13px;
+    margin-bottom:18px;
+}
+
+.page-header h1{
+    font-size:52px;
+    margin-bottom:12px;
+}
+
+.page-header p{
+    color:#d6d0c5;
+    font-size:19px;
+}
+
+
+/* MAIN */
+
+main{
+    max-width:1050px;
+    margin:auto;
+    padding:70px 22px;
+}
+
+.content-box{
+    background:#fffdf8;
+    padding:48px;
+    margin-bottom:32px;
+    border-radius:10px;
+    border:1px solid #e7dfd0;
+    box-shadow:0 8px 28px rgba(60,45,20,0.08);
+}
+
+.content-box h2{
+    color:#8b681e;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.content-box p{
+    margin-bottom:18px;
+}
+
+
+/* INTRO */
+
+.intro{
+    border-left:6px solid #e9c46a;
+}
+
+.name{
+    font-size:32px;
+    color:#17140f;
+    margin-bottom:18px;
+}
+
+
+/* BOOKS */
+
+.book-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:25px;
+}
+
+.book{
+    background:#f4f1ea;
+    padding:28px 20px;
+    border-radius:8px;
+    text-align:center;
+    border-top:4px solid #e9c46a;
+}
+
+.book-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.book h3{
+    font-family:Arial,sans-serif;
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.book p{
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+
+
+/* FAMILY */
+
+.family{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+    margin-top:25px;
+}
+
+.family-card{
+    padding:28px;
+    background:#f4f1ea;
+    border-radius:8px;
+    text-align:center;
+    border-top:4px solid #e9c46a;
+}
+
+.family-card h3{
+    color:#8b681e;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.family-card p{
+    font-family:Arial,sans-serif;
+    margin:0;
+}
+
+
+/* VISION */
+
+.vision{
+    background:#17140f;
+    color:#eeeeee;
+    border:none;
+}
+
+.vision h2{
+    color:#e9c46a;
+}
+
+.vision p{
+    color:#ddd5c7;
+}
+
+
+/* QUOTE */
+
+.quote{
+    background:#e9c46a;
+    color:#17140f;
+    padding:50px 30px;
+    margin-bottom:32px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.quote p{
+    font-size:25px;
+    font-style:italic;
+    margin:0;
+}
+
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    margin-top:12px;
+    padding:12px 24px;
+    background:#17140f;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:25px;
+    font-family:Arial,sans-serif;
+}
+
+.button:hover{
+    background:#8b681e;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#17140f;
+    color:#aaaaaa;
+    text-align:center;
+    padding:38px 20px;
+    font-family:Arial,sans-serif;
+}
+
+footer strong{
+    color:#e9c46a;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    nav{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:12px;
+    }
+
+    .nav-links a{
+        display:inline-block;
+        margin:4px 7px;
+        font-size:12px;
+    }
+
+    .page-header{
+        padding:70px 20px;
+    }
+
+    .page-header h1{
+        font-size:40px;
+    }
+
+    main{
+        padding:50px 16px;
+    }
+
+    .content-box{
+        padding:30px 22px;
+    }
+
+    .book-list{
+        grid-template-columns:1fr;
+    }
+
+    .family{
+        grid-template-columns:1fr;
+    }
+
+    .quote p{
+        font-size:21px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+Abhishek Chendake
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="books.html">Books</a>
+<a href="thoughts.html">Thoughts</a>
+<a href="philosophy.html">Philosophy</a>
+<a href="journey.html">Journey</a>
+<a href="articles.html">Articles</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<header class="page-header">
+
+<div class="label">
+ABOUT THE AUTHOR
+</div>
+
+<h1>About Me</h1>
+
+<p>
+The person behind the thoughts, questions and words.
+</p>
+
+</header>
+
+
+<main>
+
+
+<!-- INTRODUCTION -->
+
+<section class="content-box intro">
+
+<div class="name">
+Abhishek Sanjay Chendake
+</div>
+
+<p>
+I am a writer, philosopher and creator from Mulegaon,
+Solapur, Maharashtra, India. My work is deeply connected
+with philosophy, human thoughts, existence, truth,
+self-discovery and the continuous search for a deeper
+understanding of life.
+</p>
+
+<p>
+Writing, for me, is not simply about putting words on a page.
+It is a way of exploring questions, observing life and
+understanding the thoughts that exist within and around us.
+</p>
+
+</section>
+
+
+<!-- WAY OF THINKING -->
+
+<section class="content-box">
+
+<h2>My Way of Thinking</h2>
+
+<p>
+Human life is filled with questions. Some questions have
+clear answers, while others remain open throughout our lives.
+I am particularly interested in questions that make us pause
+and look beyond ordinary assumptions.
+</p>
+
+<p>
+Who are we? Why do we think the way we think?
+What is truth? What gives life meaning?
+How much of our identity is created by our own understanding,
+and how much is shaped by the world around us?
+</p>
+
+<p>
+These questions form an important part of my writing.
+I see philosophy as a way of observing life, questioning ideas
+and developing a deeper awareness of ourselves.
+</p>
+
+</section>
+
+
+<!-- WRITING -->
+
+<section class="content-box">
+
+<h2>My Writing</h2>
+
+<p>
+My writing explores the relationship between thoughts,
+emotions, identity, existence, perception and personal growth.
+I try to approach these subjects in a way that allows readers
+to connect philosophical ideas with their own experiences.
+</p>
+
+<p>
+A simple thought can sometimes lead to a much larger question.
+That question can become the beginning of reflection,
+and reflection can become the beginning of self-discovery.
+</p>
+
+<p>
+Through my books and articles, I want to create a space where
+readers can slow down, think deeply and develop their own
+perspectives.
+</p>
+
+</section>
+
+
+<!-- BOOKS -->
+
+<section class="content-box">
+
+<h2>My Books</h2>
+
+<p>
+My books are an extension of my curiosity about thoughts,
+life, existence and personal transformation.
+</p>
+
+<div class="book-list">
+
+<div class="book">
+
+<div class="book-icon">📘</div>
+
+<h3>
+The Ocean of Thoughts
+</h3>
+
+<p>
+Exploring thoughts, consciousness,
+life and philosophical questions.
+</p>
+
+</div>
+
+
+<div class="book">
+
+<div class="book-icon">📗</div>
+
+<h3>
+अज्ञाताचा शोध
+</h3>
+
+<p>
+अस्तित्व, सत्य आणि स्वतःच्या
+शोधाचा तात्त्विक प्रवास.
+</p>
+
+</div>
+
+
+<div class="book">
+
+<div class="book-icon">📙</div>
+
+<h3>
+The Better Version of You
+</h3>
+
+<p>
+Exploring self-discovery,
+growth and personal development.
+</p>
+
+</div>
+
+</div>
+
+<a href="books.html" class="button">
+Explore My Books →
+</a>
+
+</section>
+
+
+<!-- FAMILY -->
+
+<section class="content-box">
+
+<h2>My Family</h2>
+
+<p>
+My family has an important place in my journey and in the
+person I have become.
+</p>
+
+<div class="family">
+
+<div class="family-card">
+
+<h3>Father</h3>
+
+<p>
+Sanjay Chendake
+</p>
+
+</div>
+
+
+<div class="family-card">
+
+<h3>Mother</h3>
+
+<p>
+Kavita Chendake
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VISION -->
+
+<section class="content-box vision">
+
+<h2>My Vision</h2>
+
+<p>
+My vision is to continue writing, learning and exploring ideas
+that encourage curiosity, self-reflection and deeper thinking.
+</p>
+
+<p>
+I want my work to encourage readers to question assumptions,
+look within themselves and explore life from different
+perspectives.
+</p>
+
+<p>
+I do not aim to provide a final answer to every philosophical
+question. Instead, I want my writing to create a starting point
+for thought and reflection.
+</p>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section class="quote">
+
+<p>
+“Sometimes the beginning of understanding
+is simply having the courage to ask a question.”
+</p>
+
+</section>
+
+
+<!-- ROOTS -->
+
+<section class="content-box">
+
+<h2>My Roots</h2>
+
+<p>
+My journey begins from Mulegaon, Solapur, Maharashtra, India.
+My roots, experiences and observations continue to influence
+my writing, ideas and perspective on life.
+</p>
+
+<p>
+📍 Mulegaon, Solapur, Maharashtra, India
+</p>
+
+<a href="contact.html" class="button">
+Get In Touch →
+</a>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
+</p>
+
+<p>
+Writer • Philosopher • Creator
+</p>
+
+</footer>
+
+
+</body>
+</html>
