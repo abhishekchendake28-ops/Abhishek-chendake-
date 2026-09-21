@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Philosophy | Abhishek Sanjay Chendake</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f1ea;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #111111;
+            padding: 22px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 5px 8px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: #202020;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #d4af37;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #dddddd;
+        }
+
+        /* INTRO */
+
+        .intro {
+            max-width: 850px;
+            margin: auto;
+            padding: 70px 20px 40px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            color: #555555;
+            font-size: 17px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px 80px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 28px;
+            border-top: 4px solid #d4af37;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #222222;
+        }
+
+        .card p {
+            color: #555555;
+            font-size: 16px;
+        }
+
+        /* DARK SECTION */
+
+        .dark-section {
+            background: #171717;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .dark-section h2 {
+            color: #d4af37;
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+
+        .dark-section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #dddddd;
+            font-size: 17px;
+        }
+
+        /* QUOTE */
+
+        .quote {
+            background: #d4af37;
+            color: #111111;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .quote h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .quote p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #101010;
+            color: #aaaaaa;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: #d4af37;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            .hero {
+                padding: 75px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .intro h2,
+            .dark-section h2,
+            .quote h2 {
+                font-size: 28px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Abhishek Chendake
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Books.html">Books</a>
+            <a href="Thoughts.html">Thoughts</a>
+            <a href="Philosophy.html">Philosophy</a>
+            <a href="Journey.html">Journey</a>
+            <a href="Articles.html">Articles</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <h1>
+            The World of <span>Philosophy</span>
+        </h1>
+
+        <p>
+            Exploring existence, truth, consciousness,
+            human nature and the meaning of life.
+        </p>
+
+    </section>
+
+
+    <section class="intro">
+
+        <h2>Why Philosophy?</h2>
+
+        <p>
+            Philosophy encourages us to question,
+            observe and think deeply about ourselves
+            and the world around us.
+        </p>
+
+    </section>
+
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>Existence</h3>
+
+            <p>
+                Why do we exist?
+                What is the meaning of life?
+                Questions about existence encourage us
+                to look deeper into the nature of being.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Truth</h3>
+
+            <p>
+                What is truth?
+                How do we know what is true?
+                Searching for truth begins with curiosity,
+                observation and questioning.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Self-Discovery</h3>
+
+            <p>
+                Understanding ourselves is a continuous
+                journey. Our thoughts, experiences,
+                choices and values shape our understanding
+                of life.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Consciousness</h3>
+
+            <p>
+                Our consciousness influences how we
+                experience reality, understand ourselves
+                and interpret the world around us.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Human Nature</h3>
+
+            <p>
+                Human beings are shaped by thoughts,
+                emotions, experiences, relationships
+                and the choices they make.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Meaning</h3>
+
+            <p>
+                Meaning is not always something we find.
+                Sometimes it is something we create
+                through our choices and experiences.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="dark-section">
+
+        <h2>Philosophy as a Journey</h2>
+
+        <p>
+            Philosophy is not only about finding answers.
+            It is also about learning to ask meaningful
+            questions.
+        </p>
+
+        <p>
+            The search for understanding can lead us
+            towards greater awareness of our thoughts,
+            beliefs and experiences.
+        </p>
+
+        <p>
+            For me, philosophy is a continuous journey
+            of questioning, reflection and self-discovery.
+        </p>
+
+    </section>
+
+
+    <section class="quote">
+
+        <h2>Keep Questioning</h2>
+
+        <p>
+            "The beginning of wisdom is the courage
+            to question what we think we know."
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 <strong>Abhishek Sanjay Chendake</strong>
+
+        <br>
+
+        Writer • Philosopher • Creator
+
+    </footer>
+
+</body>
+
+</html>
