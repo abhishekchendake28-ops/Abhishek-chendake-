@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Articles | Abhishek Sanjay Chendake</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f8f8f6;
+    color:#222;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    border-bottom:1px solid #dddddd;
+    padding:22px 6%;
+    text-align:center;
+}
+
+.logo{
+    color:#222;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.logo span{
+    color:#b28a32;
+}
+
+nav a{
+    color:#333;
+    text-decoration:none;
+    margin:5px 8px;
+    font-size:14px;
+    display:inline-block;
+}
+
+nav a:hover{
+    color:#b28a32;
+}
+
+/* HERO */
+
+.hero{
+    background:#ebe6dc;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero .label{
+    color:#b28a32;
+    font-size:13px;
+    letter-spacing:3px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:52px;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#555;
+    font-size:18px;
+}
+
+/* INTRO */
+
+.intro{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.intro h2{
+    font-family:Georgia,serif;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.intro p{
+    color:#666;
+}
+
+/* ARTICLES */
+
+.articles{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px 90px;
+}
+
+.article-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.article{
+    background:white;
+    padding:35px;
+    border:1px solid #e0e0e0;
+    transition:.3s;
+}
+
+.article:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.article-number{
+    color:#b28a32;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.article h3{
+    font-family:Georgia,serif;
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.article p{
+    color:#666;
+    margin-bottom:22px;
+}
+
+.read{
+    color:#b28a32;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FEATURE */
+
+.feature{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.feature h2{
+    font-family:Georgia,serif;
+    color:#d4af37;
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.feature p{
+    max-width:750px;
+    margin:auto;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:#999;
+    text-align:center;
+    padding:30px 20px;
+    font-size:14px;
+}
+
+footer strong{
+    color:#d4af37;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .article-grid{
+        grid-template-columns:1fr;
+    }
+
+    .article{
+        padding:28px;
+    }
+
+    .intro h2,
+    .feature h2{
+        font-size:28px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+Abhishek <span>Chendake</span>
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Books.html">Books</a>
+<a href="Thoughts.html">Thoughts</a>
+<a href="Philosophy.html">Philosophy</a>
+<a href="Journey.html">Journey</a>
+<a href="Articles.html">Articles</a>
+<a href="Projects.html">Projects</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="label">
+WRITING • IDEAS • REFLECTIONS
+</div>
+
+<h1>Articles & Essays</h1>
+
+<p>
+A space for longer reflections on philosophy,
+life, human thought and self-discovery.
+</p>
+
+</section>
+
+
+<section class="intro">
+
+<h2>Ideas Worth Exploring</h2>
+
+<p>
+Writing allows an idea to travel beyond a single moment.
+These articles explore questions that invite reflection
+and encourage deeper thinking.
+</p>
+
+</section>
+
+
+<section class="articles">
+
+<div class="article-grid">
+
+
+<div class="article">
+
+<div class="article-number">
+ARTICLE 01
+</div>
+
+<h3>
+The Search for Meaning
+</h3>
+
+<p>
+Why do human beings search for meaning?
+Exploring the relationship between existence,
+experience and the questions we ask about life.
+</p>
+
+<a class="read" href="#">
+Read Article →
+</a>
+
+</div>
+
+
+<div class="article">
+
+<div class="article-number">
+ARTICLE 02
+</div>
+
+<h3>
+Understanding Our Own Thoughts
+</h3>
+
+<p>
+Our thoughts influence the way we see ourselves
+and the world. Understanding them
