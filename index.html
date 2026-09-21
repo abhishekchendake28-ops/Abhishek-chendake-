@@ -6,7 +6,12 @@
 
 <title>Abhishek Sanjay Chendake | Writer & Philosopher</title>
 
+<meta name="description" content="Official website of Abhishek Sanjay Chendake, writer, philosopher and creator. Explore books, philosophy, thoughts, articles, projects and ideas.">
+
+<meta name="author" content="Abhishek Sanjay Chendake">
+
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -18,257 +23,367 @@ html{
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f5f7fb;
-    color:#1f2937;
-    line-height:1.8;
+    color:#182033;
+    line-height:1.7;
 }
 
 /* NAVBAR */
+
 .navbar{
-    background:#101827;
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(10,15,30,.96);
+    backdrop-filter:blur(12px);
     padding:18px 6%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 4px 20px rgba(0,0,0,.25);
+    box-shadow:0 5px 25px rgba(0,0,0,.2);
 }
 
 .logo{
     color:white;
     font-size:21px;
     font-weight:bold;
+    letter-spacing:.5px;
 }
 
-.navbar a{
-    color:white;
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links a{
+    color:#e5e7eb;
     text-decoration:none;
-    margin-left:16px;
+    margin-left:20px;
     font-size:14px;
+    transition:.3s;
 }
 
-.navbar a:hover{
+.nav-links a:hover{
     color:#60a5fa;
 }
 
 /* HERO */
+
 .hero{
-    background:linear-gradient(135deg,#0f172a,#1d4ed8);
-    color:white;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
     padding:90px 20px;
+    color:white;
+    background:
+    radial-gradient(circle at top right,#2563eb55,transparent 35%),
+    radial-gradient(circle at bottom left,#7c3aed44,transparent 35%),
+    linear-gradient(135deg,#080d1c,#111827,#172554);
 }
 
-.profile{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
-    margin-bottom:25px;
-    box-shadow:0 12px 35px rgba(0,0,0,.4);
+.hero-content{
+    max-width:900px;
+}
+
+.small-title{
+    color:#93c5fd;
+    font-size:16px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:44px;
-    margin-bottom:8px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#60a5fa;
 }
 
 .hero h2{
-    font-size:22px;
+    font-size:24px;
     font-weight:normal;
     color:#dbeafe;
+    margin-bottom:25px;
 }
 
 .hero p{
     max-width:750px;
-    margin:20px auto;
+    margin:auto;
+    color:#cbd5e1;
     font-size:18px;
+}
+
+.buttons{
+    margin-top:35px;
 }
 
 .button{
     display:inline-block;
-    background:#2563eb;
-    color:white;
+    padding:13px 27px;
+    margin:7px;
+    border-radius:30px;
     text-decoration:none;
-    padding:12px 25px;
-    border-radius:25px;
-    margin:6px;
+    font-weight:bold;
     transition:.3s;
 }
 
-.button:hover{
-    background:#1e40af;
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
+    background:#1d4ed8;
     transform:translateY(-3px);
 }
 
-/* SECTIONS */
-section{
-    padding:75px 7%;
+.secondary{
+    border:1px solid #64748b;
+    color:white;
 }
 
-.title{
-    text-align:center;
-    font-size:34px;
-    margin-bottom:40px;
+.secondary:hover{
+    background:white;
     color:#111827;
 }
 
-/* ABOUT */
-.about-box{
-    max-width:950px;
+/* COMMON */
+
+section{
+    padding:90px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#64748b;
+    max-width:650px;
     margin:auto;
+}
+
+/* ABOUT PREVIEW */
+
+.about{
     background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.about-box{
+    max-width:1000px;
+    margin:auto;
+    padding:45px;
+    border-radius:25px;
+    background:#f8fafc;
+    box-shadow:0 10px 35px rgba(0,0,0,.07);
 }
 
 .about-box h3{
     color:#2563eb;
-    margin:28px 0 10px;
-    font-size:22px;
+    font-size:25px;
+    margin-bottom:15px;
 }
 
 .about-box p{
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
-/* FAMILY */
-.family-box{
-    margin-top:25px;
-    padding:25px;
-    background:#eef4ff;
-    border-left:5px solid #2563eb;
-    border-radius:12px;
+/* BOOKS */
+
+.books{
+    background:#f5f7fb;
 }
 
-/* CARDS */
 .cards{
+    max-width:1150px;
+    margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:25px;
 }
 
 .card{
     background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 7px 28px rgba(0,0,0,.08);
+    padding:35px 28px;
+    border-radius:22px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
     transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 15px 35px rgba(0,0,0,.14);
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.book-icon{
+    font-size:50px;
+    margin-bottom:15px;
 }
 
 .card h3{
-    color:#2563eb;
+    color:#1d4ed8;
+    font-size:22px;
     margin-bottom:12px;
 }
 
 .card p{
-    margin-bottom:18px;
+    color:#64748b;
+    margin-bottom:20px;
 }
 
-/* BOOKS */
-.book{
+.card-button{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:20px;
+    background:#eff6ff;
+    color:#1d4ed8;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* THOUGHT */
+
+.thought-section{
+    background:#eaf2ff;
+}
+
+.thought-box{
+    max-width:900px;
+    margin:auto;
+    padding:55px 35px;
     text-align:center;
+    border-radius:25px;
+    background:white;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
 }
 
-.book-icon{
-    font-size:55px;
-    margin-bottom:10px;
-}
-
-/* THOUGHTS */
-.thoughts{
-    background:#eaf1ff;
-}
-
-.thought{
-    text-align:center;
+.quote{
+    font-size:28px;
     font-style:italic;
-    font-size:19px;
+    color:#1e293b;
+}
+
+.quote-mark{
+    font-size:65px;
+    color:#2563eb;
+    line-height:.5;
 }
 
 /* PHILOSOPHY */
+
 .philosophy{
-    background:#111827;
+    background:#0b1120;
     color:white;
 }
 
-.philosophy .title{
+.philosophy .section-title h2{
     color:white;
 }
 
-.philosophy .card{
-    background:#1f2937;
-    color:white;
+.philosophy .section-title p{
+    color:#94a3b8;
 }
 
-.philosophy .card h3{
+.dark-card{
+    background:#151f35;
+    border:1px solid #263452;
+}
+
+.dark-card h3{
     color:#60a5fa;
 }
 
-/* SKILLS */
-.skill{
-    margin-bottom:22px;
+.dark-card p{
+    color:#cbd5e1;
 }
 
-.skill-name{
-    font-weight:bold;
-    margin-bottom:7px;
+/* ARTICLES */
+
+.article-card{
+    border-top:4px solid #2563eb;
 }
 
-.bar{
-    width:100%;
-    height:10px;
-    background:#e5e7eb;
-    border-radius:20px;
-    overflow:hidden;
+/* VISION */
+
+.vision{
+    background:linear-gradient(135deg,#172554,#312e81);
+    color:white;
+    text-align:center;
 }
 
-.fill{
-    height:100%;
-    background:#2563eb;
-    border-radius:20px;
+.vision h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.vision p{
+    max-width:850px;
+    margin:auto;
+    color:#dbeafe;
+    font-size:18px;
+}
+
+/* PROJECTS */
+
+.project-card{
+    text-align:center;
 }
 
 /* CONTACT */
+
 .contact{
-    max-width:750px;
-    margin:auto;
-    text-align:center;
+    background:white;
 }
 
-.contact a{
+.contact-box{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    padding:45px;
+    border-radius:25px;
+    background:#f8fafc;
+}
+
+.email{
+    display:inline-block;
+    margin-top:20px;
     color:#2563eb;
+    font-size:18px;
+    font-weight:bold;
     text-decoration:none;
 }
 
-.social{
-    margin-top:25px;
-}
-
-.social a{
-    margin:8px;
-}
-
 /* FOOTER */
+
 footer{
-    background:#101827;
-    color:white;
+    background:#080d1c;
+    color:#94a3b8;
     text-align:center;
-    padding:35px 20px;
+    padding:40px 20px;
+}
+
+footer strong{
+    color:white;
 }
 
 /* MOBILE */
-@media(max-width:750px){
+
+@media(max-width:850px){
 
     .navbar{
         display:block;
@@ -276,205 +391,160 @@ footer{
     }
 
     .logo{
-        margin-bottom:12px;
+        margin-bottom:15px;
     }
 
-    .navbar a{
+    .nav-links a{
         display:inline-block;
-        margin:5px;
+        margin:5px 7px;
         font-size:12px;
     }
 
     .hero{
-        padding:70px 20px;
+        min-height:80vh;
+        padding:75px 20px;
     }
 
     .hero h1{
-        font-size:32px;
+        font-size:39px;
     }
 
     .hero h2{
-        font-size:19px;
+        font-size:20px;
     }
 
-    .profile{
-        width:145px;
-        height:145px;
+    .hero p{
+        font-size:16px;
     }
 
     section{
-        padding:55px 5%;
+        padding:65px 5%;
     }
 
-    .title{
-        font-size:28px;
+    .section-title h2{
+        font-size:30px;
     }
 
     .about-box{
-        padding:25px;
+        padding:28px;
     }
+
+    .quote{
+        font-size:22px;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
+<!-- NAVIGATION -->
+
+<nav class="navbar">
 
 <div class="logo">
 Abhishek Chendake
 </div>
 
-<div>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#books">Books</a>
-<a href="#thoughts">Thoughts</a>
-<a href="#philosophy">Philosophy</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="books.html">Books</a>
+<a href="thoughts.html">Thoughts</a>
+<a href="philosophy.html">Philosophy</a>
+<a href="journey.html">Journey</a>
+<a href="articles.html">Articles</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
 
 </div>
 
+</nav>
 
-<!-- HOME -->
-<section class="hero" id="home">
 
-<img src="profile.jpg"
-class="profile"
-alt="Abhishek Chendake">
+<!-- HERO -->
 
-<h1>Abhishek Sanjay Chendake</h1>
+<section class="hero">
 
-<h2>Writer • Philosopher • Creator</h2>
+<div class="hero-content">
+
+<div class="small-title">
+Official Author Website
+</div>
+
+<h1>
+Abhishek <span>Sanjay Chendake</span>
+</h1>
+
+<h2>
+Writer • Philosopher • Creator
+</h2>
 
 <p>
-Exploring philosophy, human thoughts, existence, truth,
-self-discovery and the search for a better understanding of life.
+Exploring thoughts, philosophy, existence, truth,
+self-discovery and the deeper questions of human life.
 </p>
 
-<a href="#books" class="button">
+<div class="buttons">
+
+<a href="books.html" class="button primary">
 📚 Explore My Books
 </a>
 
-<a href="#about" class="button">
-About Me
+<a href="about.html" class="button secondary">
+Discover My Story
 </a>
+
+</div>
+
+</div>
 
 </section>
 
 
 <!-- ABOUT -->
-<section id="about">
 
-<h2 class="title">About Me</h2>
+<section class="about">
+
+<div class="section-title">
+
+<h2>About Me</h2>
+
+<p>
+A writer exploring ideas, questions and the deeper dimensions of human life.
+</p>
+
+</div>
 
 <div class="about-box">
 
 <h3>Abhishek Sanjay Chendake</h3>
 
 <p>
-My name is <strong>Abhishek Sanjay Chendake</strong>, a writer,
-philosopher and creator from Mulegaon, Solapur, Maharashtra, India.
-My work is deeply connected with philosophy, human thoughts,
-existence, truth, self-discovery and the continuous search for
-a deeper understanding of life.
+I am a writer, philosopher and creator from Mulegaon,
+Solapur, Maharashtra, India. My work revolves around
+philosophy, human thoughts, existence, truth,
+self-discovery and personal growth.
 </p>
 
 <p>
-I have always been fascinated by the questions that exist beneath
-ordinary life. Questions such as: Who are we? Why do we think the
-way we think? What gives life meaning? What is truth? How much of
-what we believe is actually our own understanding, and how much is
-shaped by the world around us?
+I believe that some of the most meaningful discoveries
+begin with a simple question. Through writing, I explore
+the questions that often remain beneath our everyday
+experiences.
 </p>
 
 <p>
-For me, philosophy is not limited to books or academic ideas.
-It is a way of looking at life. It is the habit of questioning,
-observing, reflecting and trying to understand ourselves and the
-world with greater clarity.
+My books and writings are an attempt to create a space
+for reflection, curiosity and deeper thinking.
 </p>
 
-<p>
-Through my writing, I try to explore these ideas in a simple and
-thoughtful way so that readers can connect them with their own
-lives and experiences.
-</p>
-
-<p>
-My writing focuses on the relationship between the human mind,
-thoughts, emotions, identity, existence and personal growth.
-I am interested in the deeper questions that often remain hidden
-behind our everyday experiences.
-</p>
-
-<p>
-Sometimes a simple thought can lead to a much larger question,
-and that question can become the beginning of self-discovery.
-I believe that honest questioning can open new ways of looking
-at ourselves and the world.
-</p>
-
-<p>
-My books are an extension of this curiosity. Through them,
-I explore different dimensions of thought, life and
-self-understanding.
-</p>
-
-<p>
-My aim is not to provide a final answer to every philosophical
-question, but to create a space where readers can pause,
-think and discover their own perspectives.
-</p>
-
-<h3>My Books</h3>
-
-<p>
-I have written three books:
-<strong>The Ocean of Thoughts</strong>,
-<strong>अज्ञाताचा शोध</strong> and
-<strong>The Better Version of You</strong>.
-Each book explores different aspects of thoughts, philosophy,
-self-discovery, personal growth and the human experience.
-</p>
-
-<h3>My Family</h3>
-
-<div class="family-box">
-
-<p>
-<strong>Father:</strong> Sanjay Chendake
-</p>
-
-<p>
-<strong>Mother:</strong> Kavita Chendake
-</p>
-
-</div>
-
-<h3>My Vision</h3>
-
-<p>
-My vision is to continue writing, learning and exploring ideas
-that encourage deeper thinking. I want my work to inspire
-curiosity, self-reflection and the courage to question life
-beyond its surface.
-</p>
-
-<p>
-<strong>
-I write to explore thoughts, question assumptions and search
-for a deeper understanding of ourselves and the world around us.
-</strong>
-</p>
-
-<p>
-<strong>📍 Mulegaon, Solapur, Maharashtra, India</strong>
-</p>
+<a href="about.html" class="button primary">
+Read More About Me
+</a>
 
 </div>
 
@@ -482,68 +552,79 @@ for a deeper understanding of ourselves and the world around us.
 
 
 <!-- BOOKS -->
-<section id="books">
 
-<h2 class="title">My Books</h2>
+<section class="books">
+
+<div class="section-title">
+
+<h2>My Books</h2>
+
+<p>
+Three books exploring thoughts, philosophy, self-discovery and personal growth.
+</p>
+
+</div>
 
 <div class="cards">
 
-<div class="card book">
+
+<div class="card">
 
 <div class="book-icon">📘</div>
 
-<h3>The Ocean of Thoughts</h3>
+<h3>
+The Ocean of Thoughts
+</h3>
 
 <p>
-A philosophical exploration of thoughts, life,
-human consciousness and the questions that shape us.
+A philosophical exploration of thoughts,
+life, consciousness and the questions
+that shape human understanding.
 </p>
 
-<a class="button"
-href="https://www.amazon.com/dp/B0HK2W5YZ8"
-target="_blank">
-View Book
+<a href="books.html" class="card-button">
+Explore Book
 </a>
 
 </div>
 
 
-<div class="card book">
+<div class="card">
 
 <div class="book-icon">📗</div>
 
-<h3>अज्ञाताचा शोध</h3>
+<h3>
+अज्ञाताचा शोध
+</h3>
 
 <p>
-अस्तित्व, सत्य, विचार आणि स्वतःच्या शोधाचा
-एक तात्त्विक प्रवास.
+अस्तित्व, सत्य, विचार आणि स्वतःच्या
+शोधाचा एक तात्त्विक प्रवास.
 </p>
 
-<a class="button"
-href="https://amzn.in/d/0gwNUv69"
-target="_blank">
-View Book
+<a href="books.html" class="card-button">
+Explore Book
 </a>
 
 </div>
 
 
-<div class="card book">
+<div class="card">
 
 <div class="book-icon">📙</div>
 
-<h3>The Better Version of You</h3>
+<h3>
+The Better Version of You
+</h3>
 
 <p>
 A thoughtful exploration of self-discovery,
-personal growth and becoming a better version
+growth and becoming a better version
 of yourself.
 </p>
 
-<a class="button"
-href="https://a.co/d/05Ynxzvd"
-target="_blank">
-View Book
+<a href="books.html" class="card-button">
+Explore Book
 </a>
 
 </div>
@@ -553,32 +634,40 @@ View Book
 </section>
 
 
-<!-- MY THOUGHTS -->
-<section class="thoughts" id="thoughts">
+<!-- THOUGHT -->
 
-<h2 class="title">💭 My Thoughts</h2>
+<section class="thought-section">
 
-<div class="cards">
+<div class="section-title">
 
-<div class="card thought">
-“Sometimes the questions we ask are more important
-than the answers we find.”
+<h2>💭 A Thought</h2>
+
+<p>
+A moment to pause, question and reflect.
+</p>
+
 </div>
 
-<div class="card thought">
-“Understanding yourself is the beginning of
-understanding the world.”
+<div class="thought-box">
+
+<div class="quote-mark">
+“
 </div>
 
-<div class="card thought">
-“Truth may challenge us, but questioning helps
-us see beyond assumptions.”
+<div class="quote">
+Sometimes the questions we ask are
+more important than the answers we find.
 </div>
 
-<div class="card thought">
-“A better version of ourselves begins with the
-courage to look within.”
+<div class="quote-mark">
+”
 </div>
+
+<br>
+
+<a href="thoughts.html" class="button primary">
+Explore More Thoughts
+</a>
 
 </div>
 
@@ -586,105 +675,159 @@ courage to look within.”
 
 
 <!-- PHILOSOPHY -->
-<section class="philosophy" id="philosophy">
 
-<h2 class="title">My Philosophy</h2>
+<section class="philosophy">
+
+<div class="section-title">
+
+<h2>My Philosophy</h2>
+
+<p>
+Exploring the deeper questions behind existence and human experience.
+</p>
+
+</div>
 
 <div class="cards">
 
-<div class="card">
 
-<h3>Existence</h3>
+<div class="card dark-card">
+
+<h3>
+Existence
+</h3>
 
 <p>
-Exploring questions about existence, identity
-and the meaning of life.
+Questions about existence, identity,
+meaning and the nature of being.
 </p>
 
 </div>
 
-<div class="card">
 
-<h3>Truth</h3>
+<div class="card dark-card">
+
+<h3>
+Truth
+</h3>
 
 <p>
-Thinking about truth, perception and the way
-we understand reality.
+Exploring truth, perception,
+belief and our understanding of reality.
 </p>
 
 </div>
 
-<div class="card">
 
-<h3>Self-Discovery</h3>
+<div class="card dark-card">
+
+<h3>
+Self-Discovery
+</h3>
 
 <p>
-Understanding ourselves through reflection,
-questioning and continuous learning.
+Understanding ourselves through
+reflection, questioning and continuous learning.
+</p>
+
+</div>
+
+
+<div class="card dark-card">
+
+<h3>
+Human Thought
+</h3>
+
+<p>
+Exploring how thoughts, experiences
+and perspectives shape our lives.
 </p>
 
 </div>
 
 </div>
+
+<br>
+
+<center>
+
+<a href="philosophy.html" class="button secondary">
+Explore My Philosophy
+</a>
+
+</center>
 
 </section>
 
 
-<!-- SKILLS -->
-<section id="skills">
+<!-- ARTICLES -->
 
-<h2 class="title">Skills & Interests</h2>
+<section>
 
-<div class="about-box">
+<div class="section-title">
 
-<div class="skill">
+<h2>📰 Articles & Writing</h2>
 
-<div class="skill-name">
-Writing & Philosophy
-</div>
-
-<div class="bar">
-<div class="fill" style="width:90%"></div>
-</div>
+<p>
+Ideas, reflections and philosophical writing.
+</p>
 
 </div>
 
-
-<div class="skill">
-
-<div class="skill-name">
-AI & Prompt Engineering
-</div>
-
-<div class="bar">
-<div class="fill" style="width:75%"></div>
-</div>
-
-</div>
+<div class="cards">
 
 
-<div class="skill">
+<div class="card article-card">
 
-<div class="skill-name">
-HTML & CSS
-</div>
+<h3>
+The Questions We Carry
+</h3>
 
-<div class="bar">
-<div class="fill" style="width:70%"></div>
-</div>
+<p>
+Why do human beings constantly search
+for meaning, truth and understanding?
+</p>
+
+<a href="articles.html" class="card-button">
+Read Articles
+</a>
 
 </div>
 
 
-<div class="skill">
+<div class="card article-card">
 
-<div class="skill-name">
-JavaScript
+<h3>
+The Nature of Thought
+</h3>
+
+<p>
+A reflection on thoughts, perception
+and the world we create within our minds.
+</p>
+
+<a href="articles.html" class="card-button">
+Read Articles
+</a>
+
 </div>
 
-<div class="bar">
-<div class="fill" style="width:55%"></div>
-</div>
+
+<div class="card article-card">
+
+<h3>
+Understanding Yourself
+</h3>
+
+<p>
+Self-understanding begins with
+observation, questioning and reflection.
+</p>
+
+<a href="articles.html" class="card-button">
+Read Articles
+</a>
 
 </div>
 
@@ -694,82 +837,132 @@ JavaScript
 
 
 <!-- PROJECTS -->
-<section id="projects">
 
-<h2 class="title">My Projects</h2>
+<section style="background:#f5f7fb;">
+
+<div class="section-title">
+
+<h2>🚀 My Projects</h2>
+
+<p>
+Creative and technology projects beyond writing.
+</p>
+
+</div>
 
 <div class="cards">
 
-<div class="card">
 
-<h3>🌐 Personal Website</h3>
+<div class="card project-card">
+
+<h3>
+🌐 Website Projects
+</h3>
 
 <p>
-A professional personal website created using
-HTML and CSS.
+Exploring website creation,
+design and digital publishing.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="card project-card">
 
-<h3>🤖 AI Projects</h3>
+<h3>
+🤖 AI & Technology
+</h3>
 
 <p>
-Exploring artificial intelligence, AI tools,
-prompt engineering and automation.
+Learning artificial intelligence,
+AI tools and emerging technologies.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="card project-card">
 
-<h3>📚 Writing Projects</h3>
+<h3>
+📚 Writing Projects
+</h3>
 
 <p>
-Philosophical books and articles exploring
-life, thoughts, truth and self-discovery.
+Books, articles and philosophical
+ideas developed through writing.
 </p>
 
 </div>
 
 </div>
+
+<br>
+
+<center>
+
+<a href="projects.html" class="button primary">
+View My Projects
+</a>
+
+</center>
+
+</section>
+
+
+<!-- VISION -->
+
+<section class="vision">
+
+<h2>My Vision</h2>
+
+<p>
+To continue writing, learning and exploring ideas
+that encourage curiosity, self-reflection and deeper
+thinking about ourselves and the world around us.
+</p>
+
+<br>
+
+<a href="about.html" class="button secondary">
+Explore My Vision
+</a>
 
 </section>
 
 
 <!-- CONTACT -->
-<section id="contact">
 
-<h2 class="title">Contact Me</h2>
+<section class="contact">
 
-<div class="contact">
+<div class="section-title">
+
+<h2>Let's Connect</h2>
 
 <p>
 For books, writing, collaborations or other enquiries,
 feel free to connect with me.
 </p>
 
-<p>
-📧 Email:
-<a href="mailto:abhishekchendake23@gmail.com">
-abhishekchendake23@gmail.com
-</a>
-</p>
+</div>
+
+<div class="contact-box">
 
 <p>
 📍 Mulegaon, Solapur, Maharashtra, India
 </p>
 
-<div class="social">
+<a class="email"
+href="mailto:abhishekchendake23@gmail.com">
 
-<a href="#">Instagram</a>
-<a href="#">LinkedIn</a>
-<a href="#">GitHub</a>
+📧 abhishekchendake23@gmail.com
 
-</div>
+</a>
+
+<br><br>
+
+<a href="contact.html" class="button primary">
+Contact Me
+</a>
 
 </div>
 
@@ -777,14 +970,19 @@ abhishekchendake23@gmail.com
 
 
 <!-- FOOTER -->
+
 <footer>
 
 <p>
-© 2026 Abhishek Sanjay Chendake
+© 2026 <strong>Abhishek Sanjay Chendake</strong>
 </p>
 
 <p>
 Writer • Philosopher • Creator
+</p>
+
+<p>
+Mulegaon, Solapur, Maharashtra, India
 </p>
 
 </footer>
